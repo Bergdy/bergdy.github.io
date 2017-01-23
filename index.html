@@ -9,7 +9,7 @@ Enter the data: <input type="text" id="data"/><br><br>
   <script>
 function formdata() 
 {
-var data = atob(document.getElementById("data").value);
+var data = JSON.parse(atob(document.getElementById("data").value));
 document.writeln("<h1>Result Page</h1><br>");
 document.writeln(data);
 }
