@@ -4,18 +4,14 @@
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 <form><br>
-Enter your First Name: <input type="text" id="firstname"/><br><br>
-Enter your Last Name: <input type="text" id="lastname"/><br><br>
+Enter the data: <input type="text" id="data"/><br><br>
 <input type="submit" value="Submit" onclick="formdata()"/><br>
   <script>
 function formdata() 
 {
-var firstname1= document.getElementById("firstname").value;
-var lastname1= document.getElementById("lastname").value;
-document.writeln("<h1>Confirmation Page</h1><br>");
-document.writeln("Thank you for completing this form.<br><br>");
-document.writeln("The first name you entered is " + firstname1 + "<br>");
-document.writeln("The last name you entered is " + lastname1);
+var data = btoa(document.getElementById("data").value);
+document.writeln("<h1>Result Page</h1><br>");
+document.writeln(data);
 }
 </script>
 </form>
