@@ -3,22 +3,5 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
-<form><br>
-Enter the raw data: <input type="text" id="data"/><br><br>
-<input type="submit" value="Submit" onclick="formdata()"/><br>
-<script>
-function formdata() 
-{
-var data = JSON.parse(document.getElementById("data").value);
-var lmd = data.stock["G-4-1"];
-var datastring = JSON.stringify(data, null, 4);
-document.writeln("<h1>Result Page</h1>");
-document.writeln("LMD: " + lmd);
-document.writeln("<h1>Raw Data</h1>");
-document.writeln("<pre>" + datastring + "</pre>");
-document.close();
-}
-</script>
-</form>
 </body>
 </html>
