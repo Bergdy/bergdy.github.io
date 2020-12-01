@@ -12,6 +12,8 @@ function formdata()
 var data = JSON.parse (document.getElementById("data").value);
 var datastring = JSON.stringify(data, null, 4);
 document.writeln("<h1>Result Page</h1><br>");
+document.writeln("LMD: " + data.stock.G-4-1);
+document.writeln("<p>Raw Data<br>");
 document.writeln("<pre>" + datastring + "</pre>");
 document.close();
 }
