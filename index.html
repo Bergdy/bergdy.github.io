@@ -10,7 +10,7 @@ Enter the raw data: <input type="text" id="data"/><br><br>
 function formdata() 
 {
 var data = JSON.parse(document.getElementById("data").value);
-var lmd = data.stock.G-4-1;
+var lmd = data.stock["G-4-1"];
 var datastring = JSON.stringify(data, null, 4);
 document.writeln("<h1>Result Page</h1><br>");
 document.writeln("LMD: " + lmd);
